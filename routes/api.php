@@ -17,6 +17,13 @@ use App\Http\Controllers\API\BlogController;
 |
 */
 
+Route::get('/', function () {
+    $response['success'] = true;
+    $response['message'] = 'Welcome to arrauf API';
+
+    return $response;
+});
+
 Route::controller(CmsController::class)->group(function(){
     Route::get('cms/home', 'home');
     Route::get('cms/contact', 'contact');

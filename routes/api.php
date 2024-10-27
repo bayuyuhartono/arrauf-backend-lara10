@@ -33,7 +33,7 @@ Route::controller(CmsController::class)->group(function(){
 Route::controller(BlogController::class)->group(function(){
     Route::get('blog/page/{id}', 'page');
     Route::get('blog/news', 'newsLists');
-    Route::get('blog/news/{id}', 'news');
+    Route::get('blog/news/{slug}', 'news');
 });
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

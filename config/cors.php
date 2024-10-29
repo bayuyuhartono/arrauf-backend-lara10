@@ -23,7 +23,7 @@ return [
 
     'allowed_origins_patterns' => [],
 
-    'allowed_headers' => ['*'],
+    'allowed_headers' => ['http://localhost:3000', 'https://ar-rauf.com'],
 
     'exposed_headers' => [],
 
